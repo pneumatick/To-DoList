@@ -27,6 +27,7 @@ def open_file():
     try:
         f = open(file_name)
         text = f.readlines()
+        new_list()
         num_inc = int(text[0].strip())
         incomplete = text[1:num_inc + 1]
         complete = text[num_inc + 1:]
